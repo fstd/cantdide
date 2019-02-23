@@ -1,0 +1,2 @@
+##c testcase A testcase is a minimal, compilable, runnable example exhibiting your symptoms. "Minimal" means just the bare essentials required to illustrate your question. "Compilable and runnable" means that there is enough code to compile, link, and execute it on our machines, and therefore use our debuggers. Please paste a testcase at http://ideone.com or http://codepad.org to help us assist you.
+##c guts My guts can be browsed at https://github.com/fstd/cantdide
