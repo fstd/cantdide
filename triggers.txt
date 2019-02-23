@@ -108,7 +108,7 @@
 ##c global There is no "global" scope in C. There are four kinds of scopes: function, file, block, and function prototype. A variable that appears outside of any block or list of parameters has file scope, which terminates at the end of the translation unit.
 ##c gmp The GNU Multiple Precision Arithmetic Library: http://gmplib.org/
 ##c goto goto is http://david.tribble.com/text/goto.html
-##c guts My guts can be browsed at https://github.com/fstd/cbot
+##c guts My guts can be browsed at https://github.com/fstd/cantdide
 ##c h&s H&S is "C - A Reference Manual" by Harbison & Steele; a reference for C on par with K&R - http://www.amazon.com/Reference-Manual-Samuel-P-Harbison/dp/013089592X
 ##c hacker http://dejimachan.org/pb/player.php?v=/pb/tg/src/1442078700826.webm&t=haxx0r_pro.webm&loop=1 (NSFW)
 ##c heap C does not require implementations to use stacks or heaps. Please refer to the actually defined storage durations, which are four: allocated, automatic, thread and static.
@@ -255,7 +255,7 @@
 ##c sizeof error: expected expression before 'long'
 ##c smartq Learning how to effectively ask questions is beneficial for all. See http://www.catb.org/esr/faqs/smart-questions.html
 ##c sorting Sorting algorithm animations: http://www.sorting-algorithms.com/
-##c source My guts can be browsed at https://github.com/fstd/cbot
+##c source My guts can be browsed at https://github.com/fstd/cantdide
 ##c spiral spiral is The "Clockwise/Spiral Rule" is a technique for understanding C declarations. See http://c-faq.com/decl/spiral.anderson.html
 ##c ssize_t The ssize_t type is not a C standard type, it is part of POSIX. Its required range is [-1, 32767] and it's described as: "Used for a count of bytes or an error indication"
 ##c stack C does not require implementations to use stacks or heaps. Please refer to the actually defined storage durations, which are four: allocated, automatic, thread and static.
