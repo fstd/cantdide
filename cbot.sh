@@ -14,7 +14,7 @@ trap 'exit 1' INT HUP QUIT TERM
 
 #icat from https://github.com/fstd/libsrsirc
 icat -vvvcktrE/ -n "$nick" -C "$chan" "$srv" <"$fifo" | while read -r who ident where what rest; do
-	printf '%s\n' "$what" | grep -E "^$tc[a-zA-Z0-9_:,-]+$" || continue
+	printf '%s\n' "$what" | grep -E "^$tc[a-zA-Z0-9_:,#+/&-]+$" || continue
 	printf '%s\n' "$rest" | grep -E '^[][a-zA-Z0-9\`_^{|}-]+$' && who="$rest"
 
 	resp="$(grep -i -- "^$where ${what#$tc} " "$trigs" | cut -d ' ' -f 3- | head -n1)"
