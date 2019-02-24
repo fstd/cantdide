@@ -1,28 +1,28 @@
 ##c address C has pointer types and addresses (or pointer values). foo x; &x results in an address that points to an object. foo *y; y is an instance of a pointer type. Instances of pointer types do not magically point to objects. They must be assigned to before being used, for example: y = &x;
-##c alis alis is a freenode service that lets you search for channels. See `/msg alis help list` to get started. Examples: `/msg alis list make` to search for all channel names containing "make"; `/msg alis list * -topic make` to search all channels for topic containing "make"
-##c apue apue is Advanced Programming in the UNIX Environment, by Stevens and Rago, see http://www.apuebook.com/
+##c alis a freenode service that lets you search for channels. See `/msg alis help list` to get started. Examples: `/msg alis list make` to search for all channel names containing "make"; `/msg alis list * -topic make` to search all channels for topic containing "make"
+##c apue Advanced Programming in the UNIX Environment, by Stevens and Rago, see http://www.apuebook.com/
 ##c array An array type describes a contiguously allocated nonempty set of objects with a particular member object type, called the element type.
 ##c array_len array_len() is a common function-like macro for computing the number of elements of an object with an array type (shouldn't be used with pointer types). #define array_len(a) (sizeof a / sizeof *a)
 ##c ask If you have a question, just ask. If somebody knows, they'll answer :) For best results, be specific, informative, complete, concise and on-topic! Don't ask if you can ask a question. Don't ask if anyone uses/knows about foo. Please don't be demanding or insulting. Remember, we're all volunteers. Also see: http://geoff.greer.fm/2012/05/19/programmer-irc-etiquette/
-##c asprintf asprintf is char *asprintf(const char *fmt, ...) { va_list ap; va_start(ap, fmt); int b = vsnprintf(0, 0, fmt, ap) + 1; va_end(ap); va_start(ap, fmt); char *a = malloc(b); if(a != 0) vsnprintf(a, b, fmt, ap); va_end(ap); return a; }
-##c atoi atoi is evil. It does no overflow checking, handles unsigned numbers poorly, and handles strings containing trailing characters (like ``123abc'') poorly. Use strtol() instead.
+##c asprintf char *asprintf(const char *fmt, ...) { va_list ap; va_start(ap, fmt); int b = vsnprintf(0, 0, fmt, ap) + 1; va_end(ap); va_start(ap, fmt); char *a = malloc(b); if(a != 0) vsnprintf(a, b, fmt, ap); va_end(ap); return a; }
+##c atoi evil. It does no overflow checking, handles unsigned numbers poorly, and handles strings containing trailing characters (like ``123abc'') poorly. Use strtol() instead.
 ##c auto The `auto` keyword specifies that the object has automatic storage duration (which is the default storage duration of objects, hence its use is redundant and rare)
-##c autotools autotools is http://sources.redhat.com/autobook/
+##c autotools http://sources.redhat.com/autobook/
 ##c back Away messages suck: http://sackheads.org/~bnaylor/spew/away_msgs.html
 ##c beej Beej's Guide to Network Programming -- Using Internet Sockets is at http://beej.us/guide/bgnet/
 ##c binky The Binky Pointer Fun Video: http://cslibrary.stanford.edu/104/ -- YouTube version: http://www.youtube.com/watch?v=6pmWojisM_E
-##c bithacks bithacks is http://graphics.stanford.edu/~seander/bithacks.html
+##c bithacks http://graphics.stanford.edu/~seander/bithacks.html
 ##c bitwise http://web.archive.org/web/20131001100601/http://www.codersger.de/mags/cscene/CS9/CS9-02.html
 ##c bom The unicode byte-order-mark determines the endianness of UTF-N files where N>8. http://unicode.org/faq/utf_bom.html#BOM
 ##c book See http://www.iso-9899.info/wiki/Books for some useful book recommendations, including free online resources!
 ##c bookhandy It's recommended to have a proper C book handy so one could use it as a quick goto reference.
 ##c books See http://www.iso-9899.info/wiki/Books for some useful book recommendations, including free online resources!
-##c byte byte is defined by the C standard as an addressable unit of storage large enough to hold a character value. The char type is byte-sized and is at least 8 bits wide. CHAR_BIT in <limits.h> defines the byte size for any given implementation. The term "byte" is most often used to mean 8 bits; however, the term "octet" is preferred.
+##c byte defined by the C standard as an addressable unit of storage large enough to hold a character value. The char type is byte-sized and is at least 8 bits wide. CHAR_BIT in <limits.h> defines the byte size for any given implementation. The term "byte" is most often used to mean 8 bits; however, the term "octet" is preferred.
 ##c byteorder http://commandcenter.blogspot.co.uk/2012/04/byte-order-fallacy.html
 ##c c C is a low level language designed to make assembly "easier", useful for device drivers or operating systems. Thusly, one has to maintain buffers, memory, and various low level information. C is not meant to be used for everyday applications, a common misconception.
 ##c c# For C# please go to ##csharp.
 ##c c++ If you are using a C++ compiler then your code is not C -- even if you're only using the "C subset". As soon as you invoke a C++ compiler instead of a C compiler, all the rules and idiosyncrasies of the C++ specification come into play, which have subtle differences in certain semantics. Please ask ##c++ or switch to a C compiler.
-##c c/c++ c/c++ is http://david.tribble.com/text/cdiffs.htm
+##c c/c++ http://david.tribble.com/text/cdiffs.htm
 ##c c1 C Aphorism 1: The questioner's first description of the problem/question will be misleading.
 ##c c12 C Aphorism 12: The newbie will think they are smarter than they really are.
 ##c c13 C Aphorism 13: The newbie will fail to recognize undefined behavior, and will wrongly think that their program is correct because it appears to work.
@@ -42,14 +42,13 @@
 ##c c89 C89/C90 draft: http://port70.net/~nsz/c/c89/c89-draft.html or http://flash-gordon.me.uk/ansi.c.txt or http://web.archive.org/web/20050207005628/http://dev.unicals.com/papers/c89-draft.html - C Overview: http://en.wikipedia.org/wiki/C_programming
 ##c c9 C Aphorism 9: The questioner will always have some excuse for doing it wrong.
 ##c c90 C89/C90 draft: http://port70.net/~nsz/c/c89/c89-draft.html or http://flash-gordon.me.uk/ansi.c.txt or http://web.archive.org/web/20050207005628/http://dev.unicals.com/papers/c89-draft.html - C Overview: http://en.wikipedia.org/wiki/C_programming
-##c c99 http://www.iso-9899.info/n1256.html#G.5.1 [Multiplicative operators] 1 If one operand has real type and the other operand has imaginary type, then the result has imaginary type. If both operands have imaginary type, then the result has real type. (If either operand has complex type, then the result has complex type.) 2 If the operands are not both complex, then th... [truncated; see http://sprunge.us/iXKR for full text.]
-##c c99rationale c99rationale is http://www.open-std.org/jtc1/sc22/WG14/www/C99RationaleV5.10.pdf
+##c c99rationale http://www.open-std.org/jtc1/sc22/WG14/www/C99RationaleV5.10.pdf
 ##c callback A callback function abstracts some aspect of work which is independent of a particular algorithm. An implementation of that algorithm is passed a pointer to that function, and "calls back" for the abstracted work to be done. See qsort(3) for example.
-##c calloc calloc is a function that allocates a block of memory for an array of "num" elements, each of them "size" bytes long, AND initializes all its bits to zero. The effective result is the allocation of a zero-initialized memory block of (num*size) bytes. see http://claudihome.com/html/LR/function_reference/Content/c_language/lrFuncRef_CLang_calloc.htm
-##c cat cat is http://www.iso-9899.info/wiki/Cat
-##c cfaq cfaq is comp.lang.c FAQ: http://www.eskimo.com/~scs/C-faq/top.html
+##c calloc a function that allocates a block of memory for an array of "num" elements, each of them "size" bytes long, AND initializes all its bits to zero. The effective result is the allocation of a zero-initialized memory block of (num*size) bytes. see http://claudihome.com/html/LR/function_reference/Content/c_language/lrFuncRef_CLang_calloc.htm
+##c cat http://www.iso-9899.info/wiki/Cat
+##c cfaq comp.lang.c FAQ: http://www.eskimo.com/~scs/C-faq/top.html
 ##c changreet Please do not greet the channel. It adds no value to the conversation, and highlights the channel tab for no good reason.
-##c char char is required to be able to represent (at least) the values inclusively between -127 and 127 (signed char), or 0 and 255 (unsigned char). The representation chosen is implementation-defined, meaning some compilers will treat a char as signed, others unsigned. sizeof (char) is always 1. See also: CHAR_BIT, CHAR_MIN, CHAR_MAX and byte
+##c char required to be able to represent (at least) the values inclusively between -127 and 127 (signed char), or 0 and 255 (unsigned char). The representation chosen is implementation-defined, meaning some compilers will treat a char as signed, others unsigned. sizeof (char) is always 1. See also: CHAR_BIT, CHAR_MIN, CHAR_MAX and byte
 ##c char_bit CHAR_BIT is #include <limits.h> - maximum value for the number of bits used to represent an object of type char. - >= 8
 ##c chist The Development of the C Language, by Dennis M. Ritchie: http://www.bell-labs.com/usr/dmr/www/chist.html
 ##c clever C was not designed to stop its users from doing stupid things, as that would also stop them from doing clever things.
@@ -59,19 +58,19 @@
 ##c comparefloat How to compare floats: http://randomascii.wordpress.com/2012/02/25/comparing-floating-point-numbers-2012-edition/ -- More information about floats: http://randomascii.wordpress.com/2012/09/09/game-developer-magazine-floating-point/ and http://docs.sun.com/source/806-3568/ncg_goldberg.html
 ##c compilable Please paste a *compilable* test-case that exhibits your symptoms. If the code is incomplete, we cannot discount potential errors or undefined behavior elsewhere in your code, nor can we use our tools to debug. Please do not waste our time this way.
 ##c compiles It works it works! Omg omg omg! I mean it compiles. Now what's a segfault?
-##c const const is http://publications.gbdirect.co.uk/c_book/chapter8/const_and_volatile.html - see section 8.4.1, http://c-faq.com/ansi/constmismatch.html
+##c const http://publications.gbdirect.co.uk/c_book/chapter8/const_and_volatile.html - see section 8.4.1, http://c-faq.com/ansi/constmismatch.html
 ##c constconstant The const qualifier is not the same as a constant. The following code sample is not required to compile: const int i = 123; int y = i; int main(void) {}
 ##c container A container/collections library proposal for C: http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1625.pdf
 ##c continue continue causes a jump to immediately before the end of the enclosing loop body.
 ##c cpp The term "cpp" in the context of the C programming language refers to the C preprocessor. If you meant C++, then say "C++".
 ##c cppcheck Cppcheck is a static analysis tool that can diagnose things common compilers do not. http://cppcheck.sourceforge.net/
-##c cprogramming.com cprogramming.com is not a site to be recommended to C learners because it "provide you with C and C++ programming language resources". Find a resource that distinctly teaches C to avoid confusion. See !books.
+##c cprogramming.com not a site to be recommended to C learners because it "provide you with C and C++ programming language resources". Find a resource that distinctly teaches C to avoid confusion. See !books.
 ##c crappaste Paste sites to be avoided include: codepaste.net, paste.awesom.eu, paste.jhvisser.com, paste.ofcode.org, paste.ubuntu.com, paste2.org, pastebin.fr, pastebin.ubuntu.com, pastee.org, vpaste.net, www.pasteall.org. These sites make it unnecessarily difficult to access the raw paste data, making it less likely for you to get help with. See the channel topic for recommended sites.
 ##c cruelty Dykstra - on the Cruelty of Really Teaching Computer Science: http://www.cs.utexas.edu/users/EWD/ewd10xx/EWD1036.PDF
-##c databases databases is http://www.iso-9899.info/candide/dict_databases.txt
-##c ddd ddd is a graphical front end to gdb and other debuggers (http://www.gnu.org/software/ddd/)
+##c databases http://www.iso-9899.info/candide/dict_databases.txt
+##c ddd a graphical front end to gdb and other debuggers (http://www.gnu.org/software/ddd/)
 ##c decay Decaying implies permanence. Arrays do not "decay"; it is the expression that is converted, not the array. In most cases, an expression that has type "array of T" is converted to an expression with type "pointer to T" that points at the first element. See C11 6.3.2.1p3 for the exceptions. Also, ignore that Random832 idiot.
-##c declaredefine declaredefine is A declaration specifies the interpretation and attributes of a set of identifiers. A definition of an identifier is a declaration for that identifier that: for an object, causes storage to be reserved for that object; for a function, includes the function body; for an enumeration constant or typedef name, is the (only) declaration of the identifier.
+##c declaredefine A declaration specifies the interpretation and attributes of a set of identifiers. A definition of an identifier is a declaration for that identifier that: for an object, causes storage to be reserved for that object; for a function, includes the function body; for an enumeration constant or typedef name, is the (only) declaration of the identifier.
 ##c declareuse In C, declaration follows use. That means you do not write `char* p` but instead `char *p` because it doesn't mean `p is a pointer to char` but rather `*p is a char`. https://www.quora.com/Why-doesnt-C-use-better-notation-for-pointers
 ##c defaultarguments { void f(int x, int y /* default 42 */, char *z /* default "foo" */) { printf("[%d, %d, %s]\n", x, y, z); } #define F1(...) f(__VA_ARGS__, 42, "foo")\n #define F2(...) f(__VA_ARGS__, "foo")\n #define F3(...) f(__VA_ARGS__)\n #define FX(_1, _2, _3, n, ...) n\n #define f(...) FX(__VA_ARGS__, F3(__VA_ARGS__), F2(__VA_ARGS__), F1(__VA_ARGS__), 0)\n f(2); f(4, 8); f(16, 32, "bar"); }
 ##c demorgan DeMorgan's laws: !a && !b == !(a || b), and !a || !b == !(a && b)
@@ -81,7 +80,7 @@
 ##c doesntwork "It doesn't work!" is not very informative for the people trying to help you. Please describe what you think may be wrong, what results you expected to get and what instead actually happens. Pasting a compilable test-case and/or compiler messages to http://ideone.com/ may be helpful.
 ##c dontcastmalloc There is no need to cast the result of library functions that return void *; it makes your code hard to read, adds no value, and can hide a bug if you don't have a valid prototype in scope. See http://c-faq.com/malloc/mallocnocast.html
 ##c double When taking input for type double you need to use lf format specifier in the scanf statement. But when you are outputting a double you use f format specifier in the printf statements.
-##c duffing duffing is writing code from top to bottom, as opposed to horizontally. See http://iq0.com/notes/deep.nesting.html
+##c duffing writing code from top to bottom, as opposed to horizontally. See http://iq0.com/notes/deep.nesting.html
 ##c endian http://commandcenter.blogspot.co.uk/2012/04/byte-order-fallacy.html
 ##c endianness http://commandcenter.blogspot.co.uk/2012/04/byte-order-fallacy.html
 ##c enoquestion No question detected. Please ask a question.
@@ -97,29 +96,29 @@
 ##c floats What everybody should know about floating-point arithmetic: http://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html and http://randomascii.wordpress.com/2012/09/09/game-developer-magazine-floating-point/
 ##c focus ##c focuses on C. Discuss offtopic things in ##c-offtopic
 ##c fptr Function Pointer Tutorial: http://www.newty.de/fpt/fpt.html
-##c gcchacks gcchacks is http://www.ibm.com/developerworks/linux/library/l-gcc-hacks/
+##c gcchacks http://www.ibm.com/developerworks/linux/library/l-gcc-hacks/
 ##c gdb GDB website: http://www.gnu.org/software/gdb/ - GDB Manual: http://sourceware.org/gdb/current/onlinedocs/gdb/
 ##c generic _Generic is http://www.robertgamble.net/2012/01/c11-generic-selections.html
 ##c genericfunctionpointer You can convert a function pointer of one type to a function pointer of a different type for passing it as an argument to a function, but upon calling the function the pointed-to type should be compatible*. See http://www.iso-9899.info/wiki/Generic_Function_Pointer
 ##c genericpointertopointer A pointer to pointer to void (void **) is not the same as a pointer to void. It is not required to be convertible to other types of pointers to pointers, and it is not a generic pointer to pointer. See http://www.iso-9899.info/wiki/Generic_Pointer_To_Pointer
-##c getline getline is declared in stdio.h in POSIX 2008, but is not a standard C function. To compile your own code that defines a "getline" function, you may need to use -ansi or make sure you are not using POSIX (or GNU) feature test macros.
-##c gets gets is very bad. It cannot be told the size of the buffer to read in, therefore it has no way of preventing buffer overflows. Use fgets() with 'stdin' as the FILE* instead. http://www.eskimo.com/~scs/C-faq/q12.23.html
+##c getline declared in stdio.h in POSIX 2008, but is not a standard C function. To compile your own code that defines a "getline" function, you may need to use -ansi or make sure you are not using POSIX (or GNU) feature test macros.
+##c gets very bad. It cannot be told the size of the buffer to read in, therefore it has no way of preventing buffer overflows. Use fgets() with 'stdin' as the FILE* instead. http://www.eskimo.com/~scs/C-faq/q12.23.html
 ##c github Don't use github for pasting. The line numbers are in a different font size to the code, and as a result they don't line up with lines of code correctly.
 ##c global There is no "global" scope in C. There are four kinds of scopes: function, file, block, and function prototype. A variable that appears outside of any block or list of parameters has file scope, which terminates at the end of the translation unit.
 ##c gmp The GNU Multiple Precision Arithmetic Library: http://gmplib.org/
-##c goto goto is http://david.tribble.com/text/goto.html
+##c goto http://david.tribble.com/text/goto.html
 ##c guts My guts can be browsed at https://github.com/fstd/cantdide
 ##c h&s H&S is "C - A Reference Manual" by Harbison & Steele; a reference for C on par with K&R - http://www.amazon.com/Reference-Manual-Samuel-P-Harbison/dp/013089592X
 ##c hacker http://dejimachan.org/pb/player.php?v=/pb/tg/src/1442078700826.webm&t=haxx0r_pro.webm&loop=1 (NSFW)
 ##c heap C does not require implementations to use stacks or heaps. Please refer to the actually defined storage durations, which are four: allocated, automatic, thread and static.
 ##c homework We can help with homework, as long as it's within the spirit of the assignment. We won't do it for you, though. Ask questions such as "Why is it that ... ?" rather than "Show me how to ..."
-##c humorlevel humorlevel is -2
-##c ide ide is http://en.wikipedia.org/wiki/Comparison_of_integrated_development_environments
+##c humorlevel -2
+##c ide http://en.wikipedia.org/wiki/Comparison_of_integrated_development_environments
 ##c incomplete A type which describes an object is incomplete if it lacks information needed to determine its size.
 ##c indent If you are not experienced enough to adhere to coding style allowing production of readable C code, brush your source automatically: using GNU indent http://gnu.org/s/indent/, using clang-format http://clang.llvm.org/docs/ClangFormat.html, or using astyle http://astyle.sourceforge.net/
 ##c initidiom A common idiom for zero initializing elements of arrays or members of structs (automatic storage duration) is: char arr[10] = { 0 }; struct { int x; int y;} s = { 0 };
 ##c inline A function declared with an inline function specifier is an inline function. Making a function an inline function suggests that calls to the function be as fast as possible. If you use `inline', always use `static', too. See https://kellett.im/a/inline
-##c int int is a signed integer data type, at least 16 bits wide, which must be able to represent (at least) all the numbers in the range -32767 to +32767. Its lowest value, INT_MIN, and highest value, INT_MAX, are defined in <limits.h>
+##c int a signed integer data type, at least 16 bits wide, which must be able to represent (at least) all the numbers in the range -32767 to +32767. Its lowest value, INT_MIN, and highest value, INT_MAX, are defined in <limits.h>
 ##c k&r K&R is The C Programming Language, 2nd edition, by Kernighan and Ritchie -- http://wayback.archive-it.org/5263/20150203070038/http://cm.bell-labs.com/cm/cs/cbook/ -- errata: http://www.iso-9899.info/2ediffs.html
 ##c k&r2 K&R is The C Programming Language, 2nd edition, by Kernighan and Ritchie -- http://wayback.archive-it.org/5263/20150203070038/http://cm.bell-labs.com/cm/cs/cbook/ -- errata: http://www.iso-9899.info/2ediffs.html
 ##c knk K.N. King's "C Programming: A Modern Approach" is a friendly and engaging book that teaches C99. http://knking.com/books/c2/index.html
@@ -157,7 +156,7 @@
 ##c kr5-10 Chapter 5: Pointers and Arrays; Exercise 5-10. Write the program expr, which evaluates a reverse Polish expression from the command line, where each operator or operand is a separate argument. For example, expr 2 3 4 + * evaluates 2 * (3 + 4).
 ##c kr5-11 Chapter 5: Pointers and Arrays; Exercise 5-11. Modify the program entab and detab (written as exercises in Chapter 1) to accept a list of tab stops as arguments. Use the default tab settings if there are no arguments.
 ##c kr5-12 Chapter 5: Pointers and Arrays; Exercise 5-12. Extend entab and detab to accept the shorthand `entab -m +n` to mean tab stops every n columns, starting at column m. Choose convenient (for the user) default behavior.
-##c kr5-13 Chapter 5: Pointers and Arrays; Exercise 5-13. Write the program tail, which prints the last n lines of its input. By default, n is set to 10, let us say, but it can be changed by an optional argument so that `tail -n` prints the last n lines. The program should behave rationally no matter how unreasonable the input or the value of n. Write the program so that... [truncated; see http://sprunge.us/XWWO for full text.]
+##c kr5-13 Chapter 5: Pointers and Arrays; Exercise 5-13. Write the program tail, which prints the last n lines of its input. By default, n is set to 10, let us say, but it can be changed by an optional argument so that `tail -n` prints the last n lines. The program should behave rationally no matter how unreasonable the input or the value of n. Write the program so that... [truncated; see http://paste.pr0.tips/mJ for full text.]
 ##c kr5-17 Chapter 5: Pointers and Arrays; Exercise 5-17. Add a field-searching capability, so sorting may bee done on fields within lines, each field sorted according to an independent set of options. (The index for this book was sorted with -df for the index category and -n for the page numbers.)
 ##c kr5-18 Chapter 5: Pointers and Arrays; Exercise 5-18. Make dcl recover from input errors.
 ##c kr5-19 Chapter 5: Pointers and Arrays; Exercise 5-19. Modify undcl so that it does not add redundant parentheses to declarations.
@@ -182,12 +181,12 @@
 ##c learnc This channel is not a substitute for a C book, we are not here to teach you C. Please learn C by working through a C book, and we'll be glad to assist you during your endeavor.
 ##c learngradually Learning C should be done gradually by following a C learning resource. By taking on projects you're not ready for you are not learning C and you waste a lot of time while getting frustrated with your progress.
 ##c libc The term "libc" is commonly used as a shorthand for the "standard C library", a library of standard functions that can be used by all C programs (and sometimes by programs in other languages).
-##c libpack libpack is http://www.leonerd.org.uk/code/libpack
-##c libtermkey libtermkey is http://www.leonerd.org.uk/code/libtermkey/
+##c libpack http://www.leonerd.org.uk/code/libpack
+##c libtermkey http://www.leonerd.org.uk/code/libtermkey/
 ##c linkage http://www.iso-9899.info/wiki/LinkageAndStorage
 ##c local There is no "local" scope in C. There are four kinds of scopes: function, file, block, and function prototype. A variable that appears inside of a function has block scope, which terminates at the end of the block.
 ##c lvalue An lvalue is an expression that potentially designates an object. When its value is used, it is converted to the value stored in its deisgnated object. Only modifiable lvalues can be assigned to; these include non-const variables and pointer dereferences.
-##c main main is int main(int argc, char *argv[]); or int main(int argc, char **argv); or int main(void); or some other implementation-defined prototype; See also ''argc'' and ''argv''; the standard entry point to C programs
+##c main int main(int argc, char *argv[]); or int main(int argc, char **argv); or int main(void); or some other implementation-defined prototype; See also ''argc'' and ''argv''; the standard entry point to C programs
 ##c makefile For all your makefile/scripting/toolchain needs, please join ##workingset.
 ##c makefiles For all your makefile/scripting/toolchain needs, please join ##workingset.
 ##c malloc There is no need to cast the result of library functions that return void *; it makes your code hard to read, adds no value, and can hide a bug if you don't have a valid prototype in scope. See http://c-faq.com/malloc/mallocnocast.html
@@ -199,7 +198,7 @@
 ##c meaninglessinitializer Meaningless initializers are default initial values that act as a safety measure to avoid accessing uninitialized objects. This 'safety measure' doesn't fix your program and it severely reduces the capability to diagnose bugs. http://www.iso-9899.info/wiki/Meaningless_Initializers
 ##c meaninglessinitializers Meaningless initializers are default initial values that act as a safety measure to avoid accessing uninitialized objects. This 'safety measure' doesn't fix your program and it severely reduces the capability to diagnose bugs. http://www.iso-9899.info/wiki/Meaningless_Initializers
 ##c modernc 'Modern C' by Jens Gustedt (2017) is a free book that teaches C11. http://icube-icps.unistra.fr/index.php/File:ModernC.pdf
-##c n1256 n1256 is http://www.open-std.org/jtc1/sc22/WG14/www/docs/n1256.pdf
+##c n1256 http://www.open-std.org/jtc1/sc22/WG14/www/docs/n1256.pdf
 ##c n1570 No such section '6.2.5.8' in C11 Draft Standard (n1570).
 ##c newline \n represents an implementation-defined character value, which is translated to and from the system end-of-line character sequence when written to or read from a stream in text mode.
 ##c next another satisfied customer! NEXT!!
@@ -210,12 +209,12 @@
 ##c nullp Null pointers are pointer values that are guaranteed to compare equal to 0 and to other null pointers, and not to point at any object or function.
 ##c object An object is a region of data storage in the execution environment, the contents of which can represent values.
 ##c ocd Knock it off! There's an ongoing C discussion!
-##c octet octet is defined as as a quantity of eight bits, typically used to represent one ASCII character, a signed integer from -128 to 127 or an unsigned integer from 0 to 255. On most platforms used today a byte has the same size as an octet.
+##c octet defined as as a quantity of eight bits, typically used to represent one ASCII character, a signed integer from -128 to 127 or an unsigned integer from 0 to 255. On most platforms used today a byte has the same size as an octet.
 ##c oneliner Code snippets that consist of a one-liner often lack context. It's better to post a code sample (to a paste site) that illustrates your question. It should be minimal and compilable.
 ##c ood Knock it off! There's an ongoing off-topic discussion!
-##c opaque opaque is An opaque type is a type whose contents are hidden behind a pointer. This is commonly used to require access and modifications to compound types to occur through an API. FILE * is an example of an opaque type in the standard library.
+##c opaque An opaque type is a type whose contents are hidden behind a pointer. This is commonly used to require access and modifications to compound types to occur through an API. FILE * is an example of an opaque type in the standard library.
 ##c ot For discussion not related to standard C, please go to ##c-offtopic. This includes discussion about non-standard libraries, operating systems, cats, video games, cars, chess, etc.
-##c parsing parsing is http://www.ddj.com/cpp/196603535
+##c parsing http://www.ddj.com/cpp/196603535
 ##c passarray When an object with an array type is passed to a function it's being converted to a pointer to the first element of the array. Given int arr[3]; the function call: func(arr); is the same as: func(&arr[0]);
 ##c passingarrays When an object with an array type is passed to a function it's being converted to a pointer to the first element of the array type. Given int arr[3]; the function call: func(arr); is the same as: func(&arr[0]); See http://www.iso-9899.info/wiki/Passing_Arrays
 ##c paste Please paste a code sample that illustrates your question. It should be minimal and compilable.
@@ -224,79 +223,79 @@
 ##c pitfalls Common C mistakes: http://www.drpaulcarter.com/cs/common-c-errors.html
 ##c pointer The Binky Pointer Fun Video: http://cslibrary.stanford.edu/104/ -- YouTube version: http://www.youtube.com/watch?v=6pmWojisM_E
 ##c pointerops The * operator makes an object from a pointer value. The & operator makes a pointer value from an object.
-##c pointers pointers is http://c-faq.com/ptrs/index.html
-##c pointertoarray pointertoarray is A pointer to an array type can be useful for dynamically allocating contiguous arrays of arrays (multidimensional arrays). It shouldn't be confused with a pointer to pointer. Code snippet: int (*arr)[4] = malloc(2 * sizeof *arr); arr[1][3] = 123;
+##c pointers http://c-faq.com/ptrs/index.html
+##c pointertoarray A pointer to an array type can be useful for dynamically allocating contiguous arrays of arrays (multidimensional arrays). It shouldn't be confused with a pointer to pointer. Code snippet: int (*arr)[4] = malloc(2 * sizeof *arr); arr[1][3] = 123;
 ##c poll Please do not poll the channel asking if anyone knows about or has used something. Just ask your specific question about it and if someone knows then they'll answer.
 ##c pong ping
 ##c posix POSIX is the Portable Operating System Interface, <http://pubs.opengroup.org/onlinepubs/9699919799/>. ##posix exists; please consider taking your related questions there.
-##c precedence precedence is the order the compiler uses to evaluate C expressions. See http://softkorner.wordpress.com/2011/09/21/precedence-of-c-operators/ for a table of operator precedence and associativity
+##c precedence the order the compiler uses to evaluate C expressions. See http://softkorner.wordpress.com/2011/09/21/precedence-of-c-operators/ for a table of operator precedence and associativity
 ##c prejudice There's little need to make generalizations about people who program with C. Some have interesting prejudices, others don't. In any case it will depend on the individual, and not the fact that they have a preference for a particular language.
-##c prototype prototype is a function declaration that also includes types for the parameters.
-##c pstd pstd is http://paste.pr0.tips/
+##c prototype a function declaration that also includes types for the parameters.
+##c pstd http://paste.pr0.tips/
 ##c query Please stop spamming the channel. Use a /query
-##c realloc realloc is http://www.iso-9899.info/wiki/Why_not_realloc
+##c realloc http://www.iso-9899.info/wiki/Why_not_realloc
 ##c references C does not have pass-by-reference or "heavy" references like C++ or some other languages do. C does have a definition of references that is probably not what you want or need to know about, see: referencedtype
 ##c reset Days since our last accident: 0
-##c restrict restrict is a type qualifier, which may only be used with a pointer type, and which requires that objects referenced through such a pointer must be made through a single pointer value, i.e., no aliases / pointers into other parts of the object are allowed
+##c restrict a type qualifier, which may only be used with a pointer type, and which requires that objects referenced through such a pointer must be made through a single pointer value, i.e., no aliases / pointers into other parts of the object are allowed
 ##c rtfm Please find and read the documentation for that.
 ##c runtime The greatest trick that C ever pulled was convince the world that it does not have a runtime.
 ##c sallyanne The Sally-Anne test: https://outrunningthestorm.files.wordpress.com/2012/06/sallyanne.gif
-##c scanf scanf is a function that can be unsafe and unproductive - "It's nearly impossible to do decent error recovery with scanf; usually it's far easier to read entire lines (with fgets or the like), then interpret them, either using sscanf or some other techniques." - See http://www.eskimo.com/~scs/C-faq/q12.20.html
+##c scanf a function that can be unsafe and unproductive - "It's nearly impossible to do decent error recovery with scanf; usually it's far easier to read entire lines (with fgets or the like), then interpret them, either using sscanf or some other techniques." - See http://www.eskimo.com/~scs/C-faq/q12.20.html
 ##c scanf_is_stupid It looks like the !scanf factoid was unsuccessful at convincing you not to use scanf(). scanf() isn't really that stupid, providing you know how to use it correctly. Chris Torek explains some problems with the way scanf() is commonly used and provides methods of solving those problems here: http://bytes.com/topic/c/answers/215517-warning-against-scanf#post840862
 ##c schildt Please avoid Herbert Schildt's C books. See http://www.seebs.net/c/c_tcn4e.html and http://www.lysator.liu.se/c/schildt.html -- Other stuff to avoid: http://www.iso-9899.info/wiki/Main_Page#Stuff_that_should_be_avoided
 ##c scope There is no "global" scope in C. There are four kinds of scopes: function, file, block, and function prototype. A variable that appears outside of any block or list of parameters has file scope, which terminates at the end of the translation unit.
-##c segfault segfault is http://www.iso-9899.info/wiki/Segfault
+##c segfault http://www.iso-9899.info/wiki/Segfault
 ##c sequencepoint Evaluation of an expression may produce side effects. At certain specified points in the execution sequence called sequence points, all side effects of previous evaluations shall be complete and no side effects of subsequent evaluations shall have taken place.
-##c serialize serialize is packing structures, usually portably for later extraction: see man 3 xdr as well as http://tpl.sourceforge.net/ and http://www.leonerd.org.uk/code/libpack/
-##c short short is a signed integer data type, at least 16 bits wide, which must be able to represent (at least) all the numbers in the range -32767 to +32767. Its lowest value, SHRT_MIN, and highest value, SHRT_MAX, are defined in <limits.h>
+##c serialize packing structures, usually portably for later extraction: see man 3 xdr as well as http://tpl.sourceforge.net/ and http://www.leonerd.org.uk/code/libpack/
+##c short a signed integer data type, at least 16 bits wide, which must be able to represent (at least) all the numbers in the range -32767 to +32767. Its lowest value, SHRT_MIN, and highest value, SHRT_MAX, are defined in <limits.h>
 ##c simplifying Simplifying is something that should be /simple/. If it isn't then your code is needlessly complex; it often would actually be faster to remake that particular section from scratch.
-##c size size is http://steve-yegge.blogspot.com/2007/12/codes-worst-enemy.html
-##c size_t size_t is an unsigned integer type which is the result type of the sizeof operator. A size_t variable can store the size of any object. C90: printf("%lu\n", (unsigned long)sizeof a); C99: printf("%zu\n", sizeof a);
+##c size http://steve-yegge.blogspot.com/2007/12/codes-worst-enemy.html
+##c size_t an unsigned integer type which is the result type of the sizeof operator. A size_t variable can store the size of any object. C90: printf("%lu\n", (unsigned long)sizeof a); C99: printf("%zu\n", sizeof a);
 ##c sizeof error: expected expression before 'long'
 ##c smartq Learning how to effectively ask questions is beneficial for all. See http://www.catb.org/esr/faqs/smart-questions.html
 ##c sorting Sorting algorithm animations: http://www.sorting-algorithms.com/
 ##c source My guts can be browsed at https://github.com/fstd/cantdide
-##c spiral spiral is The "Clockwise/Spiral Rule" is a technique for understanding C declarations. See http://c-faq.com/decl/spiral.anderson.html
+##c spiral The "Clockwise/Spiral Rule" is a technique for understanding C declarations. See http://c-faq.com/decl/spiral.anderson.html
 ##c ssize_t The ssize_t type is not a C standard type, it is part of POSIX. Its required range is [-1, 32767] and it's described as: "Used for a count of bytes or an error indication"
 ##c stack C does not require implementations to use stacks or heaps. Please refer to the actually defined storage durations, which are four: allocated, automatic, thread and static.
-##c standard standard is C89/C90 draft: http://port70.net/~nsz/c/c89/c89-draft.html - C99 + TC1,2,3 working paper: http://open-std.org/JTC1/SC22/WG14/www/docs/n1256.pdf - C11 draft: http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf - Quick C library reference: http://goo.gl/n3TYMD - An explanation of all C standards: http://clc-wiki.net/wiki/The_C_Standard
+##c standard C89/C90 draft: http://port70.net/~nsz/c/c89/c89-draft.html - C99 + TC1,2,3 working paper: http://open-std.org/JTC1/SC22/WG14/www/docs/n1256.pdf - C11 draft: http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf - Quick C library reference: http://goo.gl/n3TYMD - An explanation of all C standards: http://clc-wiki.net/wiki/The_C_Standard
 ##c standards standard is C89/C90 draft: http://port70.net/~nsz/c/c89/c89-draft.html - C99 + TC1,2,3 working paper: http://open-std.org/JTC1/SC22/WG14/www/docs/n1256.pdf - C11 draft: http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf - Quick C library reference: http://goo.gl/n3TYMD - An explanation of all C standards: http://clc-wiki.net/wiki/The_C_Standard
-##c static static is used if the function/variable should be limited to one source file, at translation unit scope; variables of this storage class are initialised to zero; variables of this storage class which are declared in functions maintain their value between calls to the function
+##c static used if the function/variable should be limited to one source file, at translation unit scope; variables of this storage class are initialised to zero; variables of this storage class which are declared in functions maintain their value between calls to the function
 ##c storage http://www.iso-9899.info/wiki/LinkageAndStorage
 ##c string A "string" is a contiguous sequence of characters terminated by and including the first null character; http://www.iso-9899.info/wiki/String
 ##c stringification C pre-processor stringification macros: http://gcc.gnu.org/onlinedocs/cpp/Stringification.html
 ##c stringliteral The attempt to modify a string literal is has undefined behavior. An array may be initialized by a string literal, modifying such an array is well-defined. char arr[] = "String";
-##c strncpy strncpy is http://c-faq.com/lib/strncpy.html and http://blogs.msdn.com/oldnewthing/archive/2005/01/07/348437.aspx
+##c strncpy http://c-faq.com/lib/strncpy.html and http://blogs.msdn.com/oldnewthing/archive/2005/01/07/348437.aspx
 ##c strtol The strtol() function converts a string to a long int value in a way that allows the caller to do meaningful error handling.
-##c struct struct is used to define an abstract data type containing other (possibly nested) data types
+##c struct used to define an abstract data type containing other (possibly nested) data types
 ##c structorder The address of members in a structure object increase in the order in which they are declared. -- c11 6.7.2.1p15
 ##c structpacking The Lost Art of C Structure Packing: http://www.catb.org/esr/structure-packing/
 ##c subscribe That's fascinating. Please link us to your blog or newsletter so we can subscribe for updates.
 ##c subtitles Enabling subtitles. Others should now be able to decipher your retarded language.
 ##c survey Please do not poll the channel asking if anyone knows about or has used something. Just ask your specific question about it and if someone knows then they'll answer.
-##c taocp taocp is The Art of Computer Programming, by Knuth, http://www.iso-9899.info/wiki/Special:Booksources/0201485419
+##c taocp The Art of Computer Programming, by Knuth, http://www.iso-9899.info/wiki/Special:Booksources/0201485419
 ##c testcase A testcase is a minimal, compilable, runnable example exhibiting your symptoms. "Minimal" means just the bare essentials required to illustrate your question. "Compilable and runnable" means that there is enough code to compile, link, and execute it on our machines, and therefore use our debuggers. Please paste a testcase at http://ideone.com or http://codepad.org to help us assist you.
 ##c threads POSIX Threads programming: https://computing.llnl.gov/tutorials/pthreads/
 ##c threestar 3star is http://c2.com/cgi/wiki?ThreeStarProgrammer
 ##c tias "Try It And See" may work in other languages, but not in C due to the nature of undefined behavior/unportable code. Such coding-by-experimentation often leads to situations such as "But it worked fine earlier!" and/or "But it worked on my machine!". https://goo.gl/jPWRA9
 ##c toolchain For all your makefile/scripting/toolchain needs, please join ##workingset.
-##c trie trie is http://www.cs.bu.edu/teaching/c/tree/trie/
-##c true true is !false
-##c tu A source file together with all the headers and source files included is known as a preprocessing translation unit . After preprocessing, a preprocessing translation unit is called a translation unit. The separate translation units of a program communicate by (for example) calls to functions whose identifiers have external linkage, manipulation of ... [truncated; paste rate-limited, try again in 53 seconds]
-##c tutorial tutorial is http://www.iso-9899.info/wiki/Web_resources#Getting_Started
+##c trie http://www.cs.bu.edu/teaching/c/tree/trie/
+##c true !false
+##c tu A source file together with all the headers and source files included is known as a preprocessing translation unit . After preprocessing, a preprocessing translation unit is called a translation unit. The separate translation units of a program communicate by (for example) calls to functions whose identifiers have external linkage, manipulation of ... [truncated, deal with it]
+##c tutorial http://www.iso-9899.info/wiki/Web_resources#Getting_Started
 ##c tuts Almost every "tutorial" on the web is written by a person who does not know C well. Would you learn C from such a person? Obtain a good C book (see ,books) and read it.
 ##c typedef Blindly typedefing all structs "just because" is one of the greatest abuses of typedefs in C -- don't do this. Only typedef structs when they are supposed to be opaque types that are manipulated strictly via accessor/mutator functions. Never use typedef to create a pointer type.
 ##c typedeffunction You can typedef a function type which is not a pointer type. Snippet: http://www.iso-9899.info/wiki/Typedef_Function_Type
 ##c u plz learn how 2 spl "you"! http://i.imgur.com/HL1ZR.jpg
 ##c ub Undefined behavior is behavior for which the C standard does not impose any requirements. This is to allow C the freedom to be implemented on systems with different architectures. Programs invoking undefined behavior may appear to compile and even run without errors at first, only to fail on another system, or even at a later time. If you want to write reliable code, don't use such behaviors.
-##c union union is used to define an abstract data type whose members occupy the same memory
+##c union used to define an abstract data type whose members occupy the same memory
 ##c unmaintainable How to write unmaintainable code: http://freeworld.thc.org/root/phun/unmaintain.html
-##c unsigned unsigned is a qualifier for integer data types, which renders them incapable of representing negative numbers but increases the number of positive values they can represent.
-##c valgrind valgrind is a memory debugging tool. When your program is exhibiting erratic behavior, it may be due to a memory error such as overrunning a buffer or not updating the pointer after a realloc. Try running your program with valgrind; it will save you a lot of time.
+##c unsigned a qualifier for integer data types, which renders them incapable of representing negative numbers but increases the number of positive values they can represent.
+##c valgrind a memory debugging tool. When your program is exhibiting erratic behavior, it may be due to a memory error such as overrunning a buffer or not updating the pointer after a realloc. Try running your program with valgrind; it will save you a lot of time.
 ##c videotestcase A video testcase is a minimal viewable video exhibiting your problem. "Minimal" means just the bare essentials required to illustrate your problem. Please record a video testcase at http://www.youtube.com to help us assist you.
-##c vla vla is a variable length array: an array data structure of automatic storage duration whose length is determined at run time (instead of at compile time). Example: void voo(int n) { float arr[n]; }
+##c vla a variable length array: an array data structure of automatic storage duration whose length is determined at run time (instead of at compile time). Example: void voo(int n) { float arr[n]; }
 ##c volatile A volatile-qualified object may be modified in ways unknown to the implementation or have other unknown side effects when accessed. Actions on such objects shall not be `optimized out` by an implementation or reordered except as permitted by the rules for evaluating expressions.
-##c warnings warnings is http://www.iso-9899.info/wiki/WarningFlags
+##c warnings http://www.iso-9899.info/wiki/WarningFlags
 ##c websites Do not trust random websites about C. See https://goo.gl/u3WCYx
 ##c winapi For Windows API programming, try #winprog on EFnet or #winapi on freenode.
 ##c workingset For all your makefile/scripting/toolchain needs, please join ##workingset.
