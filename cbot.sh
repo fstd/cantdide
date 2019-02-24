@@ -3,6 +3,7 @@ chan='#mychan'
 nick='mynick'
 srv='irc.example.org'
 trigs='triggers.txt'
+logfile='cantdide.log'
 tc=','
 
 fifo="$(mktemp /tmp/cbot.fifo.XXXXXXXXXXX)"; rm "$fifo"; mkfifo "$fifo"
@@ -18,5 +19,6 @@ icat -vvvcktrE/ -n "$nick" -C "$chan" "$srv" <"$fifo" | while read -r who ident 
 	printf '%s\n' "$rest" | grep -E '^[][a-zA-Z0-9\`_^{|}-]+$' && who="$rest"
 
 	resp="$(grep -i -- "^$where ${what#$tc} " "$trigs" | cut -d ' ' -f 3- | head -n1)"
-	[ -n "$resp" ] && echo "$where $who: $resp" >>"$fifo";
+	[ -n "$resp" ] && echo "$where $who: $resp" >>"$fifo"
+	echo "$(date): $where: $who: ${what#$tc} -> $resp" >>"$logfile"
 done
